@@ -1,12 +1,14 @@
 {
-  "name": "Solution",
+  "name": "Solution_Windows",
+  "projectId": "edb21b31-4a2f-40b7-b341-d05e8087b770",
   "description": "Processo em Branco",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.10.2-preview]",
-    "UiPath.Mail.Activities": "[1.10.2-preview]",
-    "UiPath.System.Activities": "[21.2.1-preview]",
-    "UiPath.UIAutomation.Activities": "[21.2.0-preview]"
+    "AutomatedTestCaseGenerator.Activities": "[1.0.0]",
+    "UiPath.Excel.Activities": "[2.16.0]",
+    "UiPath.Mail.Activities": "[1.12.3]",
+    "UiPath.System.Activities": "[22.10.3]",
+    "UiPath.UIAutomation.Activities": "[21.10.9]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -15,16 +17,21 @@
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -36,7 +43,32 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b73c46f3-6a17-4b26-967a-621c14c8f024",
+        "testCaseType": "TestCase",
+        "fileName": "AutomatedTestCases\\TC_001-SumTextAndNumber.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2b5cdd3f-5885-4a5c-8da7-f03a3ffacaf4",
+        "testCaseType": "TestCase",
+        "fileName": "AutomatedTestCases\\TC_002-SumTextAndText.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3610c1e4-b433-4374-b998-c4aeabeac995",
+        "testCaseType": "TestCase",
+        "fileName": "AutomatedTestCases\\TC_003-SumNumberAndNumber.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9c407a6f-66bb-480e-870c-64f6aa1d38c7",
+        "testCaseType": "TestCase",
+        "fileName": "AutomatedTestCases\\TC_004-SumNumberAndText.xaml"
+      }
+    ],
     "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
@@ -51,5 +83,5 @@
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {},
-  "targetFramework": "Legacy"
+  "targetFramework": "Windows"
 }
