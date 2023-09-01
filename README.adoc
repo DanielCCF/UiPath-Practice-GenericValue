@@ -1,1 +1,34 @@
-Test
+= Proposed problem in the UiPath Academy
+
+Problem Statement: Add and Concatenate GenericValue Variables 
+
+1. Create four variables of the GenericValue type in your sequence: 
+
+* A with value “123” 
+* B with value “456” 
+* C with value 123 
+* D with value 456
+
+2. Print to the Output panel various operations with them and see what the result is: 
+
+* A + B 
+* C + D 
+* A + C 
+* C + A
+
+Output: Generate one log entry in the Output panel for each calculation.  Output: Generate one log entry in the Output panel for each calculation.
+
+= Developed Solution
+
+The use of test cases prevented a single sequence from performing and outputting all the mentioned results. This occurred due to a combination of factors:
+
+1. The exercise's intention is to observe the behavior of generic variables.
+2. Test cases are designed to analyze code behavior in expected scenarios.
+3. The expected behavior for the exercise includes a mix of four different types of operations:
+.. Text + Text
+.. Text + Number
+.. Number + Number
+.. Number + Text
+4. Creating a single test case to cover all four different types of operations contradicts the Single Responsibility Principle (SRP).
+
+These factors led me to decide to create a straightforward sequence that only adds generic variables and four separate tests to encompass the operations.
